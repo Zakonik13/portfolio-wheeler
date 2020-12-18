@@ -4,24 +4,55 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Wheeler's Portfolio</title>
+        <link rel="stylesheet" href="assets\css\style.css">
     </head>
+
     <body>
         <header>
-            <h1>Hunter Wheeler</h1>
-            <a href="#">About Me</a>
-            <a href="#">My Work</a>
-            <a href="#">Contact</a>
+            <div class="hero">
+                <div class="header-bar">
+                    <h1>Hunter Wheeler</h1>
+                    <nav>
+                        <ul>
+                            <li class="header-link">
+                                <a href="#about-me">~ / About Me</a>
+                            </li>
+
+                            <li class="header-link">
+                                <a href="#my-work">/ My Work</a>
+                            </li>
+
+                            <li class="header-link">
+                                <a href="#contact">/ Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
-        <main>
-            <section>
-                <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean et tortor at risus viverra adipiscing at in tellus. Adipiscing enim eu turpis egestas. Massa sapien faucibus et molestie ac feugiat sed lectus. Et ligula ullamcorper malesuada proin libero nunc consequat. In nisl nisi scelerisque eu. Nibh tellus molestie nunc non blandit. Nisl vel pretium lectus quam id leo in vitae turpis. Interdum varius sit amet mattis vulputate enim nulla aliquet porttitor. Accumsan lacus vel facilisis volutpat est. Ut eu sem integer vitae justo eget. Ac turpis egestas sed tempus urna et pharetra pharetra massa. Tincidunt id aliquet risus feugiat in ante metus dictum. Donec enim diam vulputate ut pharetra sit. Dui accumsan sit amet nulla facilisi morbi tempus iaculis urna. Sit amet aliquam id diam maecenas.</p>
-            </section>
-            <section>
-                <h2>My Work</h2>
-            </section>
+
+        <main class="container">
+            <div class="grid-container">
+                <div class="grid-item item-1">
+                    <h2 id="about-me">About Me</h2>
+                </div>
+                <div class="grid-item item-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean et tortor at risus viverra adipiscing at in tellus. Adipiscing enim eu turpis egestas. Massa sapien faucibus et molestie ac feugiat sed lectus. Et ligula ullamcorper malesuada proin libero nunc consequat. In nisl nisi scelerisque eu. Nibh tellus molestie nunc non blandit. Nisl vel pretium lectus quam id leo in vitae turpis. Interdum varius sit amet mattis vulputate enim nulla aliquet porttitor. Accumsan lacus vel facilisis volutpat est. Ut eu sem integer vitae justo eget. Ac turpis egestas sed tempus urna et pharetra pharetra massa. Tincidunt id aliquet risus feugiat in ante metus dictum. Donec enim diam vulputate ut pharetra sit. Dui accumsan sit amet nulla facilisi morbi tempus iaculis urna. Sit amet aliquam id diam maecenas.</p>
+                </div>
+                <div class="grid-item item-3">
+                    <h2 id="my-work">My Work</h2>
+                </div>
+            </div>
         </main>
+
         <footer>
+
+            <h2 id="contact">Contact</h2>
+            <ul>
+                <li>Phone</li>
+                <li>Email</li>
+                <li>Github</li>
+            </ul>
         </footer>
     </body>
 </html>
