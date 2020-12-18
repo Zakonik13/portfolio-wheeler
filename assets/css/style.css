@@ -8,7 +8,7 @@
     --yel: #d1b200;
     --light: #ffe5536c;
     --main-blue: #001885;
-    --light-blue: #3485ff49;
+    --light-blue: #a8cbff;
 }
 
 body {
@@ -82,25 +82,30 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-    border: solid thick;
-    border-color: #000000;
-    border-radius: 5px;
+    border: solid 10px;
+    border-color: #525252;
+    border-radius: none;
+    border-style: outset;
 }
 
 .item-1 {
     grid-column: 2/span 3;
     grid-row: 2;
-    padding: 3px;
+    padding-bottom: 4px;
     font-size: 20px;
     color: var(--yel);
-    background-color: #000000;
+    background-color: var(--main-blue);
 }
 
 .item-2 {
     grid-column: 3/span 12;
     grid-row: 4/span 4;
-    background-color: #ffe5536c;
-    padding: 10px;
+    padding: 15px;
+    font-size: 20px;
+    text-indent: 25px;
+    border-color:  #000000;
+    border: inset 5px;
+    background-color: var(--light);
 }
 
 .item-3 {
@@ -109,5 +114,5 @@ main {
     padding: 3px;
     font-size: 20px;
     color: var(--yel);
-    background-color: #000000;
+    background-color: var(--main-blue);
 }
