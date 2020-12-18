@@ -4,8 +4,15 @@
     margin: 0px;
 }
 
+.root {
+    --main-yel: #d1b200;
+    --light: #ffe5536c;
+    --main-blue: #001885;
+}
+
 body {
-    background-color: #ffe55393;
+
+background-color: #ffffff;
 }
 
 /* Navigation Bar */
@@ -30,7 +37,7 @@ header div.header-bar {
 header h1 {
     display: inline-block;
     font-size: 40px;
-    color: #d1b200;
+    color: var(--main-yel);
     padding-left: 15px;
     font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
 }
@@ -54,7 +61,7 @@ header nav ul li {
 
 a {
     text-decoration: none;
-    color: #d1b200;
+    color: var(--main-yel);
 }
 
 main {
@@ -72,7 +79,7 @@ main {
 .grid-item {
     display: flex;
     justify-content: center;
-    border: 5px solid #00000033;
+    border: 5px solid #001885;
     border-radius: 5px;
     width: 100%;
 }
@@ -81,12 +88,13 @@ main {
     grid-column: 2/span 3;
     grid-row: 2;
     color: #000;
-    background-color: #0033a1;
+    background-color: #001885;
 }
 
 .item-2 {
-    grid-column: 2/span 12;
+    grid-column: 3/span 12;
     grid-row: 4/span 4;
+    background-color: #ffe5536c;
 }
 
 .item-3 {
