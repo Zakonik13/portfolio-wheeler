@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #1d1d1d;
 }
 
 /* Navigation Bar */
@@ -22,30 +22,32 @@ header {
     border-bottom: solid #000000;
 }
 
-header.img {
-    background: url('../images/Hunter.jpg');
-    background-position: left;
-    background-size: 210px 200px;
-    background-repeat: no-repeat;
-}
-
 /* Large banner image */
-header div.hero {
-    width: 100%;
-    height: 400px;
+.hero {
+
     background: url('../images/IMG_4420.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+}
+.portrait {
+    display: flex;
+    justify-content: flex-start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 210px;
+    width: 220px;
+    padding: 15px;
 }
 
  /* Adds transparent, decorative bar in header */
 header div.header-bar {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #000000b9;
-    height: 50px;
+    justify-content: space-between;
 }
 
-
 header h1 {
-    display: inline-block;
     font-size: 40px;
     color: var(--yel);
     padding-left: 15px;
@@ -55,17 +57,18 @@ header h1 {
 header nav {
     padding-top: 10px;
     margin-right: 20px;
-    float: right;
     font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
     font-size: 25px;
+    float: right;
 }
 
 header nav ul {
+    display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
 }
 
 header nav ul li {
-    display: inline-block;
     margin-left: 5px;
 }
 
@@ -85,6 +88,7 @@ main {
     grid-template-columns: repeat(16, 1fr);
     grid-gap: 0px;
     grid-auto-flow: dense;
+
 }
 
 .grid-item {
@@ -129,20 +133,12 @@ main {
     padding: 16px 30px 10px 10px;
 }
 
-footer{
-    display: inline-block
+.contact {
+
+}
+
+footer {
     width: 100%;
-    height: 200px;
-}
-
-footer h2 {
-    float: left;
-}
-
-footer ul {
-    float: right;
-}
-
-footer ul li {
-
+    height: 80px;
+    background: var(--main-blue);
 }
