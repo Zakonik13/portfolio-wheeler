@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: #1d1d1d;
+    background-color: #a6c5e0;
 }
 
 /* Navigation Bar */
@@ -77,14 +77,14 @@ a {
     color: var(--yel);
 }
 
-main {
-    height: 500px;
+.main {
+    height: 1000px;
     background: var(--light);
 }
 
 .grid-container {
     display: grid;
-    grid-template-rows: repeat(13, 50px);
+    grid-template-rows: repeat(20, 50px);
     grid-template-columns: repeat(16, 1fr);
     grid-gap: 0px;
     grid-auto-flow: dense;
@@ -99,7 +99,7 @@ main {
 
 .box {
     font-stretch: 90%;
-    font-size: 35px;
+    font-size: 25px;
     font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
     text-align: right;
     text-shadow: 2px 2px #000000;
@@ -133,9 +133,62 @@ main {
     padding: 16px 30px 10px 10px;
 }
 
-.contact {
-
+.item-4 {
+    grid-column: 6/span 5;
+    grid-row: 10/span 3;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(12, 50px);
+    grid-template-rows: repeat(8, 50px);
+    grid-gap: 10px;
+    width: 600px;
+    height: 400px;
+    grid-auto-flow: dense;
+    text-align: center;
+    font-size: 20px;
+}
+
+.horiseon {
+    grid-column: 1/span 7;
+    grid-row: 1/span 7;
+    background-image: url(../images/horiseon.png);
+    background-size: cover;
+    border: solid;
+    border-style: thick, #000000;
+    color: #000000;
+}
+
+.run-buddy {
+    grid-column: 8/span 3;
+    grid-row: 1/span 3;
+    background-size: cover;
+    background-image: url(../images/run-buddy.png);
+    border: solid;
+    border-style: thick, #000000;
+    color: #000000;
+}
+
+.coming-soon {
+    grid-column: 8/span 3;
+    grid-row: 5/span 3;
+    background-size: cover;
+    background-image: url(../images/coming-soon.png);
+    border: solid;
+    border-style: thick, #000000;
+    color: #000000;
+}
+
+.contact {
+    display: inline-block;
+    float: left;
+}
+
 
 footer {
     width: 100%;
