@@ -73,12 +73,13 @@ header nav ul li {
 }
 
 a {
-    text-decoration: #000000;
+    text-decoration: #d1b200;
 }
 
 a:hover {
     color: var(--yel);
-    border-width: 10px;
+    transform: scale(1.3);
+    text-shadow: 2px 2px #000000;
 }
 
 /* Begins main content of page */
