@@ -74,6 +74,7 @@ header nav ul li {
 
 a {
     text-decoration: #d1b200;
+    color: var(--yel);
 }
 
 a:hover {
