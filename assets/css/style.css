@@ -73,8 +73,12 @@ header nav ul li {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: #000000;
+}
+
+a:hover {
     color: var(--yel);
+    border-width: 10px;
 }
 
 /* Begins main content of page */
@@ -162,8 +166,8 @@ a {
 .horiseon {
     grid-column: 1/span 2;
     grid-row: 1/span 2;
-    background-image: url(../images/horiseon.png);
     background-size: cover;
+    background-image: url(../images/horiseon.png);
     border: solid;
     border-style: thick, #000000;
     color: #000000;
