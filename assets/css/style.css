@@ -5,58 +5,46 @@
 }
 
 :root { /* color options */
-    --yel: #d1b200;
-    --light: #faec9e6c;
-    --main-blue: #001885;
-    --light-blue: #a8cbff;
-    --dark: #000000;
+    --main-bkg: #ffffff;
+    --main-font: #000000;
+    --hdr-bkg: #35353a;
+    --hdr-font: #d1b200;
+}
+
+body.dark-theme {
+    --main-bkg: #1a1a1a;
+    --main-font: #ffffff;
+    --hdr-bkg: #6d6d6d;
+    --hdr-font: #d1b200;
 }
 
 body {
-    background-color: #c2d1df;
+    height: 1000px;
 }
 
 /* Navigation Bar */
 header {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-bottom: solid #000000;
+    height: 6.5%;
 }
 
-/* Large banner image */
-.hero {
-
-    background: url('../images/IMG_4420.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.portrait {
-    display: flex;
-    justify-content: flex-start;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 40%;
-    width: 20%;
-    padding: 15px;
-}
-
- /* Adds transparent, decorative bar in header */
 header div.header-bar {
     display: flex;
     flex-wrap: wrap;
-    background-color: #000000b9;
+    background-color: var(--hdr-bkg);
     justify-content: space-between;
 }
 
 header h1 {
     font-size: 40px;
-    color: var(--yel);
-    padding-left: 15px;
-    font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
+    color: var(--hdr-font);
+    padding-left: 1%;
+    padding-top: 0.7%;
 }
 
 header nav {
-    padding-top: 10px;
-    margin-right: 20px;
+    padding-top: 1%;
+    margin-right: 4%;
     font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
     font-size: 25px;
     float: right;
@@ -66,6 +54,7 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+    margin-bottom: 0;
 }
 
 header nav ul li {
@@ -77,23 +66,46 @@ header nav ul li:hover {
 }
 
 a {
-    text-decoration: #d1b200;
+    text-decoration: var(--hdr-font);
     color: var(--yel);
 }
 
 a:hover {
-    color: var(--yel);
+    color: var(--hdr-font);
     transform: scale(1.1);
-    text-shadow: 2px 2px #000000;
+    text-shadow: 1px 1px #000000;
+}
+
+/* Image, About Me, Contact */
+.hero {
+    height: 100%;
+    border-bottom: double #42424259;
+    background-color: var(--main-bkg);
+    color: var(--main-font);
+}
+
+.size {
+    font-size: 25px;
+}
+
+.portrait {
+    display: flex;
+    justify-content: flex-start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    padding: 10px 5px 5px 10px;
+    border-radius: 25px;
 }
 
 /* Begins main content of page */
 .main {
     height: 1000px;
     width: 100%;
-    background: var(--light);
-    margin-top: 50px;
-    background-color: #c2d1df;
+    background: var(--main-bkg);
+    color: var(--main-font);
+    padding: 2% 5%;
 }
 
 .main-container {
@@ -101,117 +113,35 @@ a:hover {
     flex-wrap: wrap;
 }
 
-/* groups name and grid items. ex: item-1&2 item-3&4 */
-.group-1 {
-    height: 50%;
-    width: 90%;
+.skills {
     margin-bottom: 10%;
 }
 
-.group-2 {
-    height: 50%;
-    width: 90%;
+.main-project {
+    background-color: #424242;
+    border: solid thin #000000;
+    border-radius: 15px;
+    height: 420px;
 }
 
-/* modifies items 1 and 3 */
-.box {
-    font-stretch: 90%;
-    font-size: 25px;
-    font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
-    text-align: right;
-    text-shadow: 2px 2px #000000;
-    color: var(--yel);
+.extra {
+    background-color: #424242;
+    border: solid thin #000000;
+    border-radius: 15px;
+    height: 200px;
+    margin: 0 2% 3% 1%;
 }
 
-.item-1 {
-    float: left;
-    padding: 10px 10px 10px 80px;
-}
-
-.item-2 {
-    margin-left: 25%;
-    padding: 15px;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-indent: 25px;
-    color: var(--dark);  
-    background: linear-gradient(360deg, #005baa,  #ffffff);
-    border: inset;
-    border: solid, thick;
-    overflow: auto;
-}
-
-.item-3 {
-    float: left;
-    padding: 16px 10px 10px 80px;
-}
-
-.item-4 {
-    width: 52%;
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    border: inset;
-    border: solid, thick;
-    margin-left: 25%;
-    padding: 10px 10px 20px 10px;
-}
-
-/* creates grid for item-4, project images */
-.grid-container-2 {
-    display: grid;
-    grid-template-columns: repeat(3, 100%);
-    grid-template-rows: repeat(2, 50%);
-    grid-gap: 10px;
-    grid-auto-flow: dense;
-    text-align: center;
-    font-size: 20px;
-}
-
-.horiseon {
-    grid-column: 1/span 2;
-    grid-row: 1/span 2;
-    background-size: cover;
-    background-image: url(../images/horiseon.png);
-    border: solid;
-    border-style: thick, #000000;
-    color: #000000;
-}
-
-.run-buddy {
-    background-size: cover;
-    background-image: url(../images/run-buddy.png);
-    border: solid;
-    border-style: thick, #000000;
-    color: #000000;
-}
-
-.coming-soon {
-    background-size: cover;
-    background-image: url(../images/coming-soon.png);
-    border: solid;
-    border-style: thick, #000000;
-    color: #000000;
-}
 /* End of main content for page */
 
 /* contact information */
-.contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    color: var(--yel);
-    background-color: var(--main-blue);
+.contact {
+    padding: 0 0 0 50px;
 }
 
-.contact {
-    float: left;
-    height: 80px;
-    padding: 25px 0 0 50px;
-    font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
-    font-size: 36px;
-    text-shadow: 2px 2px #000000;
+ul.contact-list {
+    list-style-type: none;
+    font-weight: bold;
 }
 
 .list {
@@ -222,20 +152,20 @@ a:hover {
     font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
     text-shadow: 2px 2px #000000;
     font-size: 25px;
-    font-weight: bolder;
     padding: 0px 30px;
     margin: 0px 20px;
 }
 
 .list li {
     padding: 25px 15px 0 15px;
+    list-style-type: none;
 }
 
 footer {
     width: 100%;
     height: 60px;
     color: var(--yel);
-    background: var(--dark);
+    background: #000000;
 }
 
 footer h3 {
