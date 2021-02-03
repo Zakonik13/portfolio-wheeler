@@ -12,9 +12,9 @@
 }
 
 body.dark-theme {
-    --main-bkg: #1a1a1a;
+    --main-bkg: #202020;
     --main-font: #ffffff;
-    --hdr-bkg: #6d6d6d;
+    --hdr-bkg: #000000;
     --hdr-font: #d1b200;
 }
 
@@ -50,6 +50,13 @@ header nav {
     font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
     font-size: 25px;
     float: right;
+}
+
+.menu-btn {
+    width: 25px;
+    height: 2px;
+    background-color: #000000;
+    margin: 6px 0;
 }
 
 header nav ul {
