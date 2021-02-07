@@ -78,12 +78,12 @@ header nav ul li:hover {
     cursor: pointer;
 }
 
-a {
+header a {
     text-decoration: none;
     color: var(--main-font);
 }
 
-a:hover {
+header a:hover {
     color: var(--hdr-font);
     transform: scale(1.1);
     text-shadow: 1px 1px #000000;
@@ -135,6 +135,15 @@ a:hover {
     border: solid thin #000000;
     border-radius: 15px;
     height: 420px;
+    background: url('../images/Project1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: var(--main-font);
+}
+
+.main-project:hover {
+    transform: scale(1.1);
 }
 
 .extra {
@@ -143,6 +152,9 @@ a:hover {
     border-radius: 15px;
     height: 200px;
     margin: 0 2% 3% 1%;
+    background: url('../images/coming-soon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* End of main content for page */
